@@ -11,11 +11,9 @@ function makeRandomMove () {
   game.move(possibleMoves[randomIdx])
   board.position(game.fen())
 
-  window.setTimeout(makeRandomMove, 500)
+  window.setTimeout(makeRandomMove, 5000)
 }
 
 board = Chessboard('board', 'start')
 
-window.setTimeout(makeRandomMove, 500)
-
-$('#resetButton').on('click', game.reset())
+window.setTimeout(makeRandomMove, 5000)
